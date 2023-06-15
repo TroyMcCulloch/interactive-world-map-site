@@ -1,18 +1,26 @@
 body{
-	background-color:#1d3d5b;
-	height:100%;
-	width:100%;
+    background-color: #3A6182;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
 }
-#truebody{
-	background-color:#c4daf2;
-	height:100vh;
-	width:102vw;
-	margin-left:-2vw;
+#worldmapborder{
+    background-color: #1D3D5B;
+    height: 83vh;
+    width: 100%;
+}
+#worldmapbody{
+    background-color: #C4DAF2;
+    position: relative;
+    width: 96%;
+    height: 100%;
+    right: -2%;
+    left: 2%;
 }
 nav div{
-	background-color: #21435b;
+	background-color: #21435B;
     width: 17%;
-    height: 5vw;
+    height: 8vh;
     position: relative;
     padding: 1.1%;
     padding-top: 0;
@@ -28,7 +36,7 @@ nav{
     margin-left: -0.5vw;
     width: 100vw;
 }
-h5{
+h2{
 	color: #f2f2f2;
     width: 17vw;
     margin: 0px;
@@ -41,7 +49,7 @@ h5{
 #title{
 	width:27%;
 }
-h6{
+h1{
 	color: #f2f2f2;
     font-size: 2vw;
     text-align: center;
@@ -60,7 +68,7 @@ a:hover, a:active{
 	color:white;
 }
 footer{
-	background-color:#1d3d5b;
-	width:100%;
-	height:5vw;
+    background-color: #3A6182;
+    width: 100%;
+    height: 2vw;
 }
