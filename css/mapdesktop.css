@@ -4,19 +4,6 @@ body{
     width: 100%;
     margin: 0px;
 }
-#worldmapborder{
-    background-color: #1D3D5B;
-    height: 83vh;
-    width: 100%;
-}
-#worldmapbody{
-    background-color: #C4DAF2;
-    position: relative;
-    width: 96%;
-    height: 100%;
-    right: -2%;
-    left: 2%;
-}
 nav div{
 	background-color: #21435B;
     width: 17%;
@@ -30,7 +17,6 @@ nav div{
     margin: 0vh 5vw 0vh 5vw;
     align-items: center;
 }
-
 nav{
     margin-top: -0.5vw;
     margin-left: -0.5vw;
@@ -58,6 +44,7 @@ h1{
     margin-bottom: 1.5vh;
     margin-top: 1.5vh;
 	font-family: 'Righteous', cursive;
+	text-decoration:underline;
 }
 a:link, a:visited {
 	text-decoration:none;
@@ -67,8 +54,46 @@ a:hover, a:active{
 	text-decoration:underline;
 	color:white;
 }
-footer{
-    background-color: #3A6182;
+#worldmapborder{
+    background-color: #1D3D5B;
+    height: 83vh;
     width: 100%;
+}
+#worldmapbody{
+    background-color: #C4DAF2;
+    position: relative;
+    width: 96%;
+    height: 100%;
+    right: -2%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+	overflow: auto;
+}
+#worldmapbody img{
+    height: 96%;
+    margin: 1%;
+    position: absolute;
+}
+#Country:hover .tooltip{
+  visibility: visible;
+}
+.tooltip{
+    visibility: hidden;
+    width: 300px;
+    height: 500px;
+    background-color: #6290B7;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    right: 0vw;
+    z-index: 1;
+}
+footer{
+	background-color: #3A6182;
+    width: 99%;
     height: 2vw;
+    margin: 8px;
 }
