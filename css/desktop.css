@@ -1,18 +1,11 @@
-body {
-	background-color:#9ec3ff;
-	margin:0;
+body{
+    background-color: #3A6182;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
 }
-
-nav{
-    margin-top: -0.5vw;
-    margin-left: -0.5vw;
-    width: 100vw;
-	height:8vh;
-	background-color:#1d3d5b;
-}
-
 nav div{
-	background-color:#21435b;
+	background-color: #21435B;
     width: 17%;
     height: 8vh;
     position: relative;
@@ -24,22 +17,27 @@ nav div{
     margin: 0vh 5vw 0vh 5vw;
     align-items: center;
 }
-
+nav{
+    margin-top: -0.5vw;
+    margin-left: -0.5vw;
+    width: 100vw;
+    height: 7vh;
+    display: inline-flex;
+    justify-content: center;
+}
 h2{
 	color: #f2f2f2;
     width: 17vw;
     margin: 0px;
-    margin-top: 3.5vh;
+    margin-top: 1.5vw;
     margin-bottom: 1.5vw;
     text-align: center;
     font-size: 1.5vw;
 	font-family: 'Righteous', cursive;
 }
-
-#title{
+.title{
 	width:27%;
 }
-
 h1{
 	color: #f2f2f2;
     font-size: 2vw;
@@ -48,18 +46,17 @@ h1{
     margin: 0px;
     margin-bottom: 1.5vh;
     margin-top: 1.5vh;
-    margin-top: 1.5vh;
 	font-family: 'Righteous', cursive;
+	text-decoration:underline;
 }
-
-#flagquiz {
-	width:100vw;
-	height:88vh;
-	background-color :#9ec3ff;
-	text-align:center;
-	margin:0 auto;
+a:link, a:visited {
+	text-decoration:none;
+	color:white;
 }
-
+a:hover, a:active{
+	text-decoration:underline;
+	color:white;
+}
 .top{
 	width:99vw;
 	height:42vh;
@@ -68,7 +65,9 @@ h1{
 	left:0.5vw;
 	margin:0.9vh 0 0.4vh;
 }
-
+#flagquiz{
+	background-color: #9ec3ff;
+}
 .flagbox{
 	margin :auto;
 	background-color :black;
@@ -134,20 +133,10 @@ h1{
 
 footer {
 	width: 100vw;
-	height: 6vh;
-	background-color: #1d3d5b;
-	position: relative;
-	top :8.65vh; 
-}
-
-a:link, a:visited {
-	text-decoration:none;
-	color:white;
-}
-
-a:hover, a:active {
-	text-decoration:underline;
-	color:white;
+    height: 6vh;
+    background-color: #1d3d5b;
+    position: absolute;
+    bottom: 0vh;
 }
 
 style = "position:absolute; left:120px; bottom:150px;"

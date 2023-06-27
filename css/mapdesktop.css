@@ -18,10 +18,12 @@ nav div{
     align-items: center;
 }
 nav{
-    margin-top: -0.5vw;
+	margin-top: -0.5vw;
     margin-left: -0.5vw;
     width: 100vw;
-	height: 8vh;
+    height: 8vh;
+    display: inline-flex;
+    justify-content: center;
 }
 h2{
 	color: #f2f2f2;
