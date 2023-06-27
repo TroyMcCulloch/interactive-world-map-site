@@ -1,0 +1,153 @@
+body {
+	background-color:#9ec3ff;
+	margin:0;
+}
+
+nav{
+    margin-top: -0.5vw;
+    margin-left: -0.5vw;
+    width: 100vw;
+	height:8vh;
+	background-color:#1d3d5b;
+}
+
+nav div{
+	background-color:#21435b;
+    width: 17%;
+    height: 8vh;
+    position: relative;
+    padding: 1.1%;
+    padding-top: 0;
+    padding-bottom: 0;
+    float: none;
+    display: inline-flex;
+    margin: 0vh 5vw 0vh 5vw;
+    align-items: center;
+}
+
+h2{
+	color: #f2f2f2;
+    width: 17vw;
+    margin: 0px;
+    margin-top: 3.5vh;
+    margin-bottom: 1.5vw;
+    text-align: center;
+    font-size: 1.5vw;
+	font-family: 'Righteous', cursive;
+}
+
+#title{
+	width:27%;
+}
+
+h1{
+	color: #f2f2f2;
+    font-size: 2vw;
+    text-align: center;
+    width: 27vw;
+    margin: 0px;
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
+    margin-top: 1.5vh;
+	font-family: 'Righteous', cursive;
+}
+
+#flagquiz {
+	width:100vw;
+	height:88vh;
+	background-color :#9ec3ff;
+	text-align:center;
+	margin:0 auto;
+}
+
+.top{
+	width:99vw;
+	height:42vh;
+	background-color:#38537d;
+	position:relative;
+	left:0.5vw;
+	margin:0.9vh 0 0.4vh;
+}
+
+.flagbox{
+	margin :auto;
+	background-color :black;
+	width :40vw;
+	height :30vh;
+	top :1vh;
+	position :relative;
+}
+
+.bottom{
+	width:99vw;
+	height:35vh;
+	background-color:pink;
+	position:relative;
+	left:0.5vw;
+}
+
+.bottom1{
+	width:99vw;
+	height:17.5vh;
+	display :flex;
+	background-color :black;
+}
+
+.answer1{
+	background-color :#668dcc;
+	width :49.375vw;
+	height :17.25vh;
+	position :relative;
+}
+
+.answer2{
+	background-color :#668dcc;
+	width :49.375vw;
+	height :17.25vh;
+	position :relative;
+	left :0.25vw;
+}
+
+.bottom2{
+	width:99vw;
+	height:17.5vh;
+	display :flex;
+	background-color :black;
+}
+
+.answer3{
+	background-color :#668dcc;
+	width :49.375vw;
+	height :17.25vh;
+	position :relative;
+	top :0.25vh;
+}
+
+.answer4{
+	background-color :#668dcc;
+	width :49.375vw;
+	height :17.25vh;
+	position :relative;
+	top :0.25vh;
+	left :0.25vw;
+}
+
+footer {
+	width: 100vw;
+	height: 6vh;
+	background-color: #1d3d5b;
+	position: relative;
+	top :8.65vh; 
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color:white;
+}
+
+a:hover, a:active {
+	text-decoration:underline;
+	color:white;
+}
+
+style = "position:absolute; left:120px; bottom:150px;"
