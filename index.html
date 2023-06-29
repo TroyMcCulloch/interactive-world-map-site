@@ -21,6 +21,7 @@
 		
 	</head>
 	<body>
+		
 		<nav>
 			<div class="link"><a href="index.html"><h2>World Map</h2></a></div>
 			<div id="title"><h1>Interactive Map</h1></div>
@@ -31,13 +32,26 @@
 			<div id="worldmapbody">
 				<img src="images/worldmap.png" alt="worldmap" usemap="#interactivemap">
 				<map name="interactivemap">
-				  <div id="Country"><area shape="rect" coords="1223,564,1423,724" alt="Australia" href="#">
-					<span class="tooltip">AUS</span>
-				  </div>
-				  
-				  <div id="Country"><area shape="rect" coords="1471,676,1531,745" alt="New Zealand" href="#">
-					<span class="tooltip">NZ</span>
-				  </div>
+					<div class="popup" onclick="myFunction()"><area shape="rect" coords="1471,676,1531,745" alt="New Zealand" href="#">
+					<span class="popuptext" id="NZ">New Zealand</span>
+					</div>
+					
+					<div class="popup" onclick="myFunction()"><area shape="rect" coords="1223,564,1423,724" alt="Australia" href="#">
+					<span class="popuptext" id="Aust">Australia</span>
+					</div>
+					
+					<script>
+					function myFunction() {
+					var popup = document.getElementById("NZ");
+					popup.classList.toggle("show");
+					}
+					</script>
+					<script>
+					function myFunction() {
+					var popup = document.getElementById("Aust");
+					popup.classList.toggle("show");
+					}
+					</script>
 				</map>
 			</div>
 		</div>

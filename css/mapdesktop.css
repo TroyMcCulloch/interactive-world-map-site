@@ -76,11 +76,22 @@ a:hover, a:active{
     margin: 1%;
     position: absolute;
 }
-#Country:hover .tooltip{
-  visibility: visible;
-  opacity: 1;
+footer{
+	background-color: #3A6182;
+    width: 99%;
+    height: 2vw;
+    margin: 8px;
 }
-.tooltip{
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popup .popuptext {
     visibility: hidden;
 	opacity: 0;
     transition: opacity 0.3s;
@@ -91,13 +102,13 @@ a:hover, a:active{
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    position: absolute;
+    position: fixed;
     right: 0vw;
     z-index: 1;
 }
-footer{
-	background-color: #3A6182;
-    width: 99%;
-    height: 2vw;
-    margin: 8px;
+.popup .show {
+  visibility: visible;
+  opacity:1;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
