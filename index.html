@@ -32,22 +32,21 @@
 			<div id="worldmapbody">
 				<img src="images/worldmap.png" alt="worldmap" usemap="#interactivemap">
 				<map name="interactivemap">
-					<div class="popup" onclick="myFunction()"><area shape="rect" coords="1471,676,1531,745" alt="New Zealand" href="#">
-					<span class="popuptext" id="NZ">New Zealand</span>
+					<div class="popup" onclick="NZFunction()"><area shape="rect" coords="1471,676,1531,745" alt="New Zealand" href="#">
+					<span class="popuptext" id="NZ"><h3>New Zealand</h3></span>
 					</div>
 					
-					<div class="popup" onclick="myFunction()"><area shape="rect" coords="1223,564,1423,724" alt="Australia" href="#">
-					<span class="popuptext" id="Aust">Australia</span>
+					<div class="popup" onclick="AUFunction()"><area shape="rect" coords="1223,564,1423,724" alt="Australia" href="#">
+					<span class="popuptext" id="Aust"><h3>Australia</h3></span>
 					</div>
 					
+					<!-- $('.popup').not(this).hide(); -->
 					<script>
-					function myFunction() {
+					function NZFunction() {
 					var popup = document.getElementById("NZ");
 					popup.classList.toggle("show");
 					}
-					</script>
-					<script>
-					function myFunction() {
+					function AUFunction() {
 					var popup = document.getElementById("Aust");
 					popup.classList.toggle("show");
 					}
