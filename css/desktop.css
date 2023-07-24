@@ -7,7 +7,7 @@ body{
 nav div{
 	background-color: #21435B;
     width: 17%;
-    height: 8vh;
+    height: 7.9vh;
     position: relative;
     padding: 1.1%;
     padding-top: 0;
@@ -60,21 +60,29 @@ a:hover, a:active{
 .top{
 	width:99vw;
 	height:42vh;
-	background-color:#38537d;
+	background-color:#243c70;
 	position:relative;
 	left:0.5vw;
 	margin:0.9vh 0 0.4vh;
+	top:1vh;
 }
 #flagquiz{
 	background-color: #9ec3ff;
+	height :90vh;
+	width :100vw;
 }
 .flagbox{
-	margin :auto;
+	margin :0 auto;
 	background-color :black;
-	width :40vw;
-	height :30vh;
-	top :1vh;
+	width :25vw;
+	height :25vh;
+	top :8vh;
 	position :relative;
+	
+}
+
+img{
+	border :7px solid black;
 }
 
 .bottom{
@@ -83,13 +91,14 @@ a:hover, a:active{
 	background-color:pink;
 	position:relative;
 	left:0.5vw;
+	top :1vh;
 }
 
 .bottom1{
 	width:99vw;
 	height:17.5vh;
 	display :flex;
-	background-color :black;
+	background-color :#9ec3ff;
 }
 
 .answer1{
@@ -97,6 +106,10 @@ a:hover, a:active{
 	width :49.375vw;
 	height :17.25vh;
 	position :relative;
+	text-align :center;
+	font-family :calibri;
+	font-size :50px;
+	color :white;
 }
 
 .answer2{
@@ -105,13 +118,17 @@ a:hover, a:active{
 	height :17.25vh;
 	position :relative;
 	left :0.25vw;
+	text-align :center;
+	font-family :calibri;
+	font-size :50px;
+	color :white;
 }
 
 .bottom2{
 	width:99vw;
 	height:17.5vh;
 	display :flex;
-	background-color :black;
+	background-color :#9ec3ff;
 }
 
 .answer3{
@@ -120,6 +137,10 @@ a:hover, a:active{
 	height :17.25vh;
 	position :relative;
 	top :0.25vh;
+	text-align :center;
+	font-family :calibri;
+	font-size :50px;
+	color :white;
 }
 
 .answer4{
@@ -129,14 +150,18 @@ a:hover, a:active{
 	position :relative;
 	top :0.25vh;
 	left :0.25vw;
+	text-align :center;
+	font-family :calibri;
+	font-size :50px;
+	color :white;
 }
 
 footer {
 	width: 100vw;
-    height: 6vh;
+    height: 7vh;
     background-color: #1d3d5b;
     position: absolute;
     bottom: 0vh;
 }
 
-style = "position:absolute; left:120px; bottom:150px;"
+
