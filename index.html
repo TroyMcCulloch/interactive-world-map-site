@@ -48,12 +48,17 @@
 					
 					<div class="popup" onclick="AUFunction()"><area shape="rect" coords="1223,564,1423,724" alt="Australia" href="#">
 						<span class="popuptext" id="Aust">
-							<h3>Australia</h3>
-						
-						
+							<!--ImageofCountry --><img class="popupflag"src="images/flags/australia.jpg" alt="Australia">
+							<div id="infotext"
+							<!--Name of Country--><h4 class="NC">Australia</h3>
+							<!-- Capital-->	      <h4 class="Ca">Capital - Canberra</h4>
+							<!-- Leader -->		  <h4 class="Le">Prime Minister - Anthony Albanese</h4>
+							<!-- Population -->	  <h4 class="Po">Population - 25.69 Million (2021)</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 7.688 Million square kilometres</h4>
+							<!-- Continent -->	  <h4 class="Co">Continent - Oceania</h4>
+							</div>
 						</span>
 					</div>
-					<!-- $('.popup').not(this).hide(); -->
 					<script>
 					function NZFunction() {
 					var popup = document.getElementById("NZ");
@@ -64,6 +69,7 @@
 					popup.classList.toggle("show");
 					}
 					</script>
+					
 				</map>
 			</div>
 		</div>

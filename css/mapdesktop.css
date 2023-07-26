@@ -18,10 +18,10 @@ nav div{
     align-items: center;
 }
 nav{
-    margin-top: -0.5vw;
+	margin-top: -0.5vw;
     margin-left: -0.5vw;
-    width: 100vw;
-	height: 8vh;
+    width: 100%;
+    height: 8vh;
 }
 h2{
 	color: #f2f2f2;
@@ -100,6 +100,8 @@ footer{
     transition: opacity 0.3s;
     min-width: 277px;
     min-height: 282px;
+	max-width: 333.8px;
+    max-height: 591.39px;
     width: 20vw;
     height: 60vh;
     background-color: #6290B7;
@@ -118,11 +120,11 @@ footer{
   animation: fadeIn 1s;
 }
 .popupflag{
-	width: 97%;
+    width: 97%;
     height: 32.34%;
     position: relative;
-    border: 5px solid #3A6182;
-    top: -2vh;
+    border: 5px solid #4e6f8b;
+    top: -0.4vh;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
 }
@@ -131,11 +133,15 @@ footer{
     margin: 1em;
     font-size: 2vh;
     position: relative;
-    top: -3vw;
+    top: -1vw;
 	font-family: 'Righteous', cursive;
 	text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
+}
+h4{
+	margin:1em;
 }
 .NC{
     font-size: 3vh;
     text-decoration: underline;
+	margin: 1.2em 0em 1em 0em;
 }
