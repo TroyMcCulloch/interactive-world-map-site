@@ -72,7 +72,8 @@ a:hover, a:active{
 	overflow: auto;
 }
 #worldmapimg{
-    height: 96%;
+    height: 97%;
+	width:auto;
     margin: 1%;
     position: absolute;
 	-moz-user-select: none;
@@ -128,13 +129,12 @@ footer{
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
 }
-#infotext{
+.infotext{
     text-align: center;
-    margin: 1em;
     font-size: 2vh;
     position: relative;
-    top: -1vw;
-	font-family: 'Righteous', cursive;
+    top: -2vw;
+    font-family: 'Righteous', cursive;
 	text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
 }
 h4{
@@ -143,5 +143,5 @@ h4{
 .NC{
     font-size: 3vh;
     text-decoration: underline;
-	margin: 1.2em 0em 1em 0em;
+    margin: 1em 0em 0.8em 0em;
 }
