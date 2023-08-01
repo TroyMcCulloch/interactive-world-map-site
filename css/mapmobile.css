@@ -5,14 +5,14 @@ body{
     margin: 0px;
 }
 nav div{
-	background-color: #21435B;
-    width: 17%;
+    background-color: #21435B;
+    width: 18%;
     height: 8vh;
     position: relative;
     padding: 1.1%;
     padding-top: 0;
     padding-bottom: 0;
-    float: none;
+    float: left;
     display: inline-flex;
     margin: 0vh 5vw 0vh 5vw;
     align-items: center;
@@ -25,27 +25,33 @@ nav{
 }
 h2{
 	color: #f2f2f2;
-    width: 17vw;
     margin: 0px;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
     text-align: center;
-    font-size: 1.5vw;
-	font-family: 'Righteous', cursive;
+    font-size: 3.4vw;
+    font-family: 'Righteous', cursive;
+    width: 100%;
 }
 #title{
 	width:27%;
 }
 h1{
-	color: #f2f2f2;
-    font-size: 2vw;
+    color: #f2f2f2;
+    font-size: 4vw;
     text-align: center;
     width: 27vw;
     margin: 0px;
     margin-bottom: 1.5vh;
     margin-top: 1.5vh;
-	font-family: 'Righteous', cursive;
-	text-decoration:underline;
+    font-family: 'Righteous', cursive;
+    text-decoration: underline;
+}
+a:link, a:visited {
+	text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 100%;
 }
 #worldmapborder{
     background-color: #1D3D5B;
@@ -65,12 +71,14 @@ h1{
 }
 #worldmapimg{
     height: 150%;
-	width:auto;
-    margin: 1%;
-    position: absolute;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
+    width: auto;
+    margin: 3%;
+    position: relative;
+    left: 40%;
+    transform: translateX(40%);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 footer{
     background-color: #3A6182;
