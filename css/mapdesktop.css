@@ -72,14 +72,17 @@ a:hover, a:active{
 	overflow: auto;
 }
 #worldmapimg{
-    height: 97%;
-	width:auto;
+	height: 95%;
     margin: 1%;
-    position: absolute;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    position: relative;
+    left: -50%;
+    transform: translateX(50%);
+    width: auto;
 }
+
 footer{
     background-color: #3A6182;
     width: 98%;
@@ -96,15 +99,13 @@ footer{
   user-select: none;
 }
 .popup .popuptext {
-	visibility: hidden;
+    visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s;
     min-width: 277px;
-    min-height: 282px;
-	max-width: 333.8px;
-    max-height: 591.39px;
+    max-width: 333.8px;
     width: 20vw;
-    height: 60vh;
+    height: auto;
     background-color: #6290B7;
     color: #fff;
     text-align: center;
@@ -125,7 +126,7 @@ footer{
     height: 32.34%;
     position: relative;
     border: 5px solid #4e6f8b;
-    top: -0.4vh;
+    top: -0.6vh;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
 }
@@ -144,4 +145,9 @@ h4{
     font-size: 3vh;
     text-decoration: underline;
     margin: 1em 0em 0.8em 0em;
+	text-align: center;
+    position: relative;
+    top: -2vw;
+    font-family: 'Righteous', cursive;
+	text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
 }

@@ -1,0 +1,12 @@
+
+#worldmapimg{
+    height: 97%;
+    width: auto;
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    margin: 1%;
+    left: 4%;
+    transform: translateX(0%);
+}

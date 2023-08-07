@@ -1,9 +1,3 @@
-body{
-    background-color: #3A6182;
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-}
 nav div{
     background-color: #21435B;
     width: 18%;
@@ -74,8 +68,8 @@ a:link, a:visited {
     width: auto;
     margin: 3%;
     position: relative;
-    left: 40%;
-    transform: translateX(40%);
+    left: 30%;
+    transform: translateX(30%);
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
@@ -87,27 +81,63 @@ footer{
     margin: 2%;
 }
 .popupflag{
-    width: 97%;
-    height: 32.34%;
+    width: 50%;
+    height: 50.34%;
     position: relative;
     border: 5px solid #4e6f8b;
-    top: -0.4vh;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
+    left: -22vw;
+    top: 7vh;
 }
 .infotext{
-    text-align: center;
+	text-align: left;
+    height: 80%;
+    width: auto;
     font-size: 2vh;
-    position: relative;
-    top: -2vw;
+    position: absolute;
+    top: 20vw;
+    left: 50vw;
     font-family: 'Righteous', cursive;
-	text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
+    display: inline-flex;
+    text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
+    flex-direction: column;
+}
+.popup .popuptext{
+    /* visibility:hidden;*/
+    /*opacity: 0; */ opacity: 1;
+    transition: opacity 0.3s;
+    width: 96vw;
+    height: 41vh;
+    background-color: #6290B7;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 9.1vh;
+    right: 2vw;
+    z-index: 1;
+    min-width: 0px;
+    min-height: 0px;
+    max-width: 1000em;
+    max-height: 1000em;
 }
 h4{
-	margin:1em;
+	margin: 0.5em auto;
+    width: 90%;
+    position: relative;
+    top: -5vw;
 }
 .NC{
     font-size: 3vh;
+    margin: 0.8em 0em 0.8em 0.3em;
+    width: 200%;
+    position: absolute;
+    left: -50vw;
+    top: 0vw;
+    text-align: center;
     text-decoration: underline;
-    margin: 1em 0em 0.8em 0em;
+    font-family: 'Righteous', cursive;
+    text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
 }
