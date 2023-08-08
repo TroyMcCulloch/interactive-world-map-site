@@ -71,18 +71,16 @@ a:hover, a:active{
 	height :90vh;
 	width :100vw;
 }
-.flagbox{
-	margin :0 auto;
-	background-color :black;
-	width :25vw;
-	height :25vh;
-	top :8vh;
-	position :relative;
-	
-}
 
 img{
 	border :7px solid black;
+	width :76vw;
+	max-width:400px;
+	height :auto;
+	top :8.7vh;
+	position :relative;
+	margin :auto;
+	display :block;
 }
 
 .bottom{
