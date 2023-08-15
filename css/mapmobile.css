@@ -1,21 +1,22 @@
 nav div{
     background-color: #21435B;
-    width: 18%;
-    height: 8vh;
+    width: 44%;
+    height: 7vh;
     position: relative;
-    padding: 1.1%;
-    padding-top: 0;
-    padding-bottom: 0;
-    float: left;
+    float: none;
     display: inline-flex;
-    margin: 0vh 5vw 0vh 5vw;
+    margin: 0vh 2% 0vh 2%;
     align-items: center;
+    padding: 0px;
 }
 nav{
-	margin-top: -0.5vw;
+    margin-top: -0.5vw;
     margin-left: -0.5vw;
     width: 100%;
     height: 8vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 h2{
 	color: #f2f2f2;
@@ -23,23 +24,34 @@ h2{
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
     text-align: center;
-    font-size: 3.4vw;
+    font-size: 100%;
     font-family: 'Righteous', cursive;
     width: 100%;
 }
 #title{
-	width:27%;
+    width: 80%;
+    background-color: #21435B;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0px 10% 1vh 10%;
+}
+.endlink{
+	margin: 0vh 2% 0vh 2%;
 }
 h1{
     color: #f2f2f2;
-    font-size: 4vw;
+    font-size: 140%;
     text-align: center;
-    width: 27vw;
     margin: 0px;
     margin-bottom: 1.5vh;
     margin-top: 1.5vh;
     font-family: 'Righteous', cursive;
     text-decoration: underline;
+    width: 100%;
 }
 a:link, a:visited {
 	text-decoration: none;
@@ -48,8 +60,8 @@ a:link, a:visited {
     width: 100%;
 }
 #worldmapborder{
-    background-color: #1D3D5B;
-    height: 83vh;
+	background-color: #1D3D5B;
+    height: 75vh;
     width: 100%;
 }
 #worldmapbody{
@@ -63,6 +75,17 @@ a:link, a:visited {
     justify-content: center;
 	overflow: auto;
 }
+#worldmapbodyalt{
+	background-color: #C4DAF2;
+    position: relative;
+    width: 96%;
+    height: 47%;
+    right: -2%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+} 
 #worldmapimg{
     height: 150%;
     width: auto;
@@ -73,11 +96,24 @@ a:link, a:visited {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+#worldmapimgalt{
+    height: 150%;
+    width: auto;
+    margin: 3%;
+    position: relative;
+    left: 40%;
+    transform: translateX(40%);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 footer{
     background-color: #3A6182;
     width: 98%;
-    height: 2vw;
+    height: 8vh;
     margin: 2%;
 }
 .popupflag{
@@ -96,9 +132,9 @@ footer{
     text-align: left;
     height: 80%;
     width: auto;
-    font-size: 2vh;
+    font-size: 1.7vh;
     position: absolute;
-    top: 13vw;
+    top: 18vw;
     left: 50vw;
     font-family: 'Righteous', cursive;
     display: inline-flex;
@@ -106,24 +142,30 @@ footer{
     flex-direction: column;
 }
 .popup .popuptext{
-    /* visibility:hidden;*/
-    /*opacity: 0; */ opacity: 1;
+    visibility:hidden;
+    opacity: 0;
     transition: opacity 0.3s;
     width: 96vw;
-    height: 41vh;
+    height: 40vh;
     background-color: #6290B7;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
     position: fixed;
-    bottom: 9.1vh;
+    bottom: 10.1vh;
     right: 2vw;
     z-index: 1;
     min-width: 0px;
     min-height: 0px;
     max-width: 1000em;
     max-height: 1000em;
+}
+.popup .show {
+  visibility: visible;
+  opacity:1;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 h4{
 	margin: 0.5em auto;

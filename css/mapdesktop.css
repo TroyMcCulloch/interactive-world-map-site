@@ -14,14 +14,16 @@ nav div{
     padding-bottom: 0;
     float: none;
     display: inline-flex;
-    margin: 0vh 5vw 0vh 5vw;
+    margin: 0vh 47vw 0vh 5vw;
     align-items: center;
 }
 nav{
-	margin-top: -0.5vw;
+    margin-top: -0.5vw;
     margin-left: -0.5vw;
     width: 100%;
     height: 8vh;
+    top: 0;
+    position: absolute;
 }
 h2{
 	color: #f2f2f2;
@@ -34,7 +36,18 @@ h2{
 	font-family: 'Righteous', cursive;
 }
 #title{
-	width:27%;
+	width: 34%;
+    background-color: #21435B;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0px 0% 0vh 33%;
+}
+.endlink{
+	margin: 0vh 0vw 0vh 5vw;
 }
 h1{
 	color: #f2f2f2;
@@ -70,6 +83,16 @@ a:hover, a:active{
     display: flex;
     justify-content: center;
 	overflow: auto;
+}#worldmapbody .alt{
+    background-color: #C4DAF2;
+    position: relative;
+    width: 96%;
+    height: 100%;
+    right: -2%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+	overflow: auto;
 }
 #worldmapimg{
 	height: 95%;
@@ -81,6 +104,7 @@ a:hover, a:active{
     left: -50%;
     transform: translateX(50%);
     width: auto;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
 footer{
@@ -122,8 +146,10 @@ footer{
   animation: fadeIn 1s;
 }
 .popupflag{
-    width: 97%;
-    height: 32.34%;
+	max-width: 97%;
+    max-height: 32.34%;
+    height: auto;
+    width: auto;
     position: relative;
     border: 5px solid #4e6f8b;
     top: -0.6vh;
