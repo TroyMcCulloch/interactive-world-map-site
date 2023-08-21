@@ -1,3 +1,6 @@
+
+/* Top Section - Nav Bar */
+
 nav div{
     background-color: #21435B;
     width: 44%;
@@ -59,6 +62,9 @@ a:link, a:visited {
     text-align: center;
     width: 100%;
 }
+
+/* Middle Section - World Map */
+
 #worldmapborder{
 	background-color: #1D3D5B;
     height: 75vh;
@@ -87,16 +93,16 @@ a:link, a:visited {
     overflow: auto;
 } 
 #worldmapimg{
-    height: 150%;
+	height: 150%;
     width: auto;
     margin: 3%;
     position: relative;
-    left: 40%;
-    transform: translateX(40%);
+    left: 0%;
+    transform: translateX(34%);
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 #worldmapimgalt{
     height: 150%;
@@ -110,12 +116,9 @@ a:link, a:visited {
     user-select: none;
 	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
-footer{
-    background-color: #3A6182;
-    width: 98%;
-    height: 8vh;
-    margin: 2%;
-}
+
+ /* World Map - Popup */
+
 .popupflag{
     max-width: 50%;
     max-height: 50.34%;
@@ -183,4 +186,14 @@ h4{
     text-decoration: underline;
     font-family: 'Righteous', cursive;
     text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
+}
+
+/* Bottom Section - Footer  */
+
+footer{
+    background-color: #3A6182;
+    width: 98%;
+    height: 8vh;
+    margin: 2%;
+    font-size: 0.8em;
 }
