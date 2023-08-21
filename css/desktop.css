@@ -86,10 +86,12 @@ img{
 .bottom{
 	width:99vw;
 	height:35vh;
-	background-color:pink;
 	position:relative;
 	left:0.5vw;
 	top :1vh;
+	font-family :calibri;
+	font-size :50px;
+	color :white;
 }
 
 .bottom1{
@@ -105,9 +107,6 @@ img{
 	height :17.25vh;
 	position :relative;
 	text-align :center;
-	font-family :calibri;
-	font-size :50px;
-	color :white;
 }
 
 .answer2{
@@ -117,9 +116,6 @@ img{
 	position :relative;
 	left :0.25vw;
 	text-align :center;
-	font-family :calibri;
-	font-size :50px;
-	color :white;
 }
 
 .bottom2{
@@ -136,9 +132,6 @@ img{
 	position :relative;
 	top :0.25vh;
 	text-align :center;
-	font-family :calibri;
-	font-size :50px;
-	color :white;
 }
 
 .answer4{
@@ -149,9 +142,6 @@ img{
 	top :0.25vh;
 	left :0.25vw;
 	text-align :center;
-	font-family :calibri;
-	font-size :50px;
-	color :white;
 }
 
 footer {
@@ -162,4 +152,29 @@ footer {
     bottom: 0vh;
 }
 
+@media only screen and (max-width: 400px) {       /*this is for mobile devices*/
+	.bottom{
+	font-size: 25px;
+	color:white;
+}
 
+.answer1{
+	padding-top:30px;
+	box-sizing:border-box;
+}	
+
+.answer2{
+	padding-top:30px;
+	box-sizing:border-box;
+}	
+
+.answer3{
+	padding-top:30px;
+	box-sizing:border-box;
+}	
+
+.answer4{
+	padding-top:30px;
+	box-sizing:border-box;
+}	
+}
