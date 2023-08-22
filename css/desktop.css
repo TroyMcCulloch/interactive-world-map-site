@@ -75,7 +75,7 @@ a:hover, a:active{
 	position:relative;
 	left:0.5vw;
 	margin:0.9vh 0 0.4vh;
-	top:1vh;
+	top:0vw;
 }
 #flagquiz{
     background-color: #9ec3ff;
@@ -83,7 +83,7 @@ a:hover, a:active{
     width: 100vw;
     z-index: 2;
     position: relative;
-    top: -1vw;
+    top: -1vh;
 }
 
 img{
