@@ -1,3 +1,6 @@
+
+	/* Top Section - Nav Bar */
+
 body{
     background-color: #3A6182;
     height: 100%;
@@ -68,6 +71,9 @@ a:hover, a:active{
 	text-decoration:underline;
 	color:white;
 }
+
+	/* Middle Section - World Map */
+
 #worldmapborder{
     background-color: #1D3D5B;
     height: 83vh;
@@ -107,12 +113,8 @@ a:hover, a:active{
 	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
-footer{
-    background-color: #3A6182;
-    width: 98%;
-    height: 2vw;
-    margin: 1%;
-}
+	/* World Map - Popup */
+
 .popup {
   position: relative;
   display: inline-block;
@@ -176,4 +178,13 @@ h4{
     top: -2vw;
     font-family: 'Righteous', cursive;
 	text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
+}
+
+	/* Bottom Section - Footer  */
+
+footer{
+    background-color: #3A6182;
+    width: 98%;
+    height: 2vw;
+    margin: 1%;
 }
