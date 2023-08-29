@@ -81,7 +81,7 @@ a:link, a:visited {
     justify-content: center;
 	overflow: auto;
 }
-#worldmapbodyalt{
+#worldmapbody.alt{
 	background-color: #C4DAF2;
     position: relative;
     width: 96%;
@@ -104,17 +104,17 @@ a:link, a:visited {
     user-select: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
-#worldmapimgalt{
+#worldmapimg.alt{
     height: 150%;
     width: auto;
     margin: 3%;
     position: relative;
-    left: 40%;
+    left: -17%;
     transform: translateX(40%);
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
  /* World Map - Popup */

@@ -89,16 +89,8 @@ a:hover, a:active{
     display: flex;
     justify-content: center;
 	overflow: auto;
-}#worldmapbody .alt{
-    background-color: #C4DAF2;
-    position: relative;
-    width: 96%;
-    height: 100%;
-    right: -2%;
-    left: 2%;
-    display: flex;
-    justify-content: center;
-	overflow: auto;
+	
+}#worldmapbody.alt{
 }
 #worldmapimg{
 	height: 95%;
@@ -111,6 +103,8 @@ a:hover, a:active{
     transform: translateX(50%);
     width: auto;
 	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+#worldmapimg.alt{
 }
 
 	/* World Map - Popup */

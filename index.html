@@ -20,7 +20,7 @@
 		<link href="css/mapmobile.css" rel="stylesheet" type="text/css" media="(max-width:606px)">
 		<link href="css/1460mapdesktop.css" rel="stylesheet" type="text/css" media="(min-width:1460px)">
 		
-		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	</head>
 	<body>
 			<div id="title"><h1>Interactive Map</h1></div>
@@ -33,7 +33,7 @@
 			<div id="worldmapbody">
 				<img id="worldmapimg" src="images/worldmap.png" alt="worldmap" usemap="#interactivemap">
 				<map name="interactivemap">
-					<div class="popup" onclick="NZFunction()"><area shape="rect" coords="1471,676,1531,745" alt="New Zealand" href="#">
+					<div class="popup" onclick="NZFunction()"><area shape="rect" coords="2660,1206,2764,1330" alt="New Zealand" href="#">
 						<div class="popuptext" id="NZ">
 							<!--ImageofCountry --><img class="popupflag" src="images/flags/nz1.png" alt="NZ">
 							<!--Name of Country--><h4 class="NC">New Zealand</h4>
@@ -47,7 +47,7 @@
 						</div>
 					</div>
 					
-					<div class="popup" onclick="AUFunction()"><area shape="rect" coords="1223,564,1423,724" alt="Australia" href="#">
+					<div class="popup" onclick="AUFunction()"><area shape="rect" coords="2230,1004,2562,1294" alt="Australia" href="#">
 						<div class="popuptext" id="Aust">
 							<!--ImageofCountry --><img class="popupflag" src="images/flags/australia.jpg" alt="Australia">
 							<!--Name of Country--><h4 class="NC">Australia</h4>
@@ -64,10 +64,14 @@
 					function NZFunction() {
 					var popup = document.getElementById("NZ");
 					popup.classList.toggle("show");
+					$(document.getElementById("worldmapbody")).toggleClass('alt');
+					$(document.getElementById("worldmapimg")).toggleClass('alt');
 					}
 					function AUFunction() {
 					var popup = document.getElementById("Aust");
 					popup.classList.toggle("show");
+					$(document.getElementById("worldmapbody")).toggleClass('alt');
+					$(document.getElementById("worldmapimg")).toggleClass('alt');
 					}
 					</script>
 					
@@ -77,5 +81,11 @@
 	<footer>
 	<a href="https://www.vectorstock.com/royalty-free-vector/gray-map-world-with-countries-borders-vector-29938910" target="_blank">Vector Map by VectorStock / Created by Robot</a>
 	</footer>
+	<script type="text/javascript" src="scripts/jquery.rwdImageMaps.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+    });
+	</script>
 	</body>
 </html>
