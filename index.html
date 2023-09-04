@@ -21,6 +21,7 @@
 		<link href="css/1460mapdesktop.css" rel="stylesheet" type="text/css" media="(min-width:1460px)">
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="scripts/countryfunctions.js"></script>
 	</head>
 	<body>
 			<div id="title"><h1>Interactive Map</h1></div>
@@ -33,7 +34,9 @@
 			<div id="worldmapbody">
 				<img id="worldmapimg" src="images/worldmapclear.png" alt="worldmap" usemap="#interactivemap">
 				<map name="interactivemap">
-					<div class="popup" onclick="NZFunction()"><area shape="rect" coords="4338,2088,4182,1896" alt="New Zealand" href="#">
+				
+				<!-- Oceania -->
+					<div class="popup" onclick="NZFunction()"><area shape="rect" coords="4338,2088,4182,1896" href="#">
 						<div class="popuptext" id="NZ">
 							<!--ImageofCountry --><img class="popupflag" src="images/flags/nz1.png" alt="NZ">
 							<!--Name of Country--><h4 class="NC">New Zealand</h4>
@@ -41,13 +44,12 @@
 							<!-- Capital-->	      <h4 class="Ca">Capital - Wellington</h4>
 							<!-- Leader -->		  <h4 class="Le">Prime Minister - Chris Hipkins</h4>
 							<!-- Population -->	  <h4 class="Po">Population - 5.123 Million (2021)</h4>
-							<!-- Area/Landmass --><h4 class="AL">Area - 268,021 square kilometres</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 268,021 km2</h4>
 							<!-- Continent -->	  <h4 class="Co">Continent - Oceania</h4>
 							</div>
 						</div>
 					</div>
-					
-					<div class="popup" onclick="AUFunction()"><area shape="rect" coords="4023,2028,3510,1572" alt="Australia" href="#">
+					<div class="popup" onclick="AUFunction()"><area shape="rect" coords="4023,2028,3510,1572" href="#">
 						<div class="popuptext" id="Aust">
 							<!--ImageofCountry --><img class="popupflag" src="images/flags/australia.jpg" alt="Australia">
 							<!--Name of Country--><h4 class="NC">Australia</h4>
@@ -55,25 +57,77 @@
 							<!-- Capital-->	      <h4 class="Ca">Capital - Canberra</h4>
 							<!-- Leader -->		  <h4 class="Le">Prime Minister - Anthony Albanese</h4>
 							<!-- Population -->	  <h4 class="Po">Population - 25.69 Million (2021)</h4>
-							<!-- Area/Landmass --><h4 class="AL">Area - 7.688 Million square kilometres</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 7.688 Million km2</h4>
 							<!-- Continent -->	  <h4 class="Co">Continent - Oceania</h4>
 							</div>
 						</div>
 					</div>
-					<script>
-					function NZFunction() {
-					var popup = document.getElementById("NZ");
-					popup.classList.toggle("show");
-					$(document.getElementById("worldmapbody")).toggleClass('alt');
-					$(document.getElementById("worldmapimg")).toggleClass('alt');
-					}
-					function AUFunction() {
-					var popup = document.getElementById("Aust");
-					popup.classList.toggle("show");
-					$(document.getElementById("worldmapbody")).toggleClass('alt');
-					$(document.getElementById("worldmapimg")).toggleClass('alt');
-					}
-					</script>
+					<div class="popup" onclick="PapuaFunction()"><area shape="rect" coords="3865,1470,3985,1572" href="#">
+						<div class="popuptext" id="PapuaNew">
+							<!--ImageofCountry --><img class="popupflag" src="images/flags/papuanewguinea.jpg" alt="Papua New Guinea">
+							<!--Name of Country--><h4 class="NC">Papua New Guinea</h4>
+							<div class="infotext">
+							<!-- Capital-->	      <h4 class="Ca">Capital - Port Moresby</h4>
+							<!-- Leader -->		  <h4 class="Le">Prime Minister - James Marape</h4>
+							<!-- Population -->	  <h4 class="Po">Population - 9.949 million (2021)</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 462,840 km2</h4>
+							<!-- Continent -->	  <h4 class="Co">Continent - Oceania</h4>
+							</div>
+						</div>
+					</div>
+					<div class="popup" onclick="SolomonFunction()"><area shape="rect" coords="4000,1473,4147,1590" href="#">
+						<div class="popuptext" id="Solomon">
+							<!--ImageofCountry --><img class="popupflag" src="images/flags/solomonislands.jpg" alt="Solomon Islands">
+							<!--Name of Country--><h4 class="NC">Solomon Islands</h4>
+							<div class="infotext">
+							<!-- Capital-->	      <h4 class="Ca">Capital - Honiara</h4>
+							<!-- Leader -->		  <h4 class="Le">Prime Minister - Manasseh Sogavare</h4>
+							<!-- Population -->	  <h4 class="Po">Population - 707,851 (2021)</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 29,000 km2</h4>
+							<!-- Continent -->	  <h4 class="Co">Continent - Oceania</h4>
+							</div>
+						</div>
+					</div>
+					<div class="popup" onclick="VanuatuFunction()"><area shape="rect" coords="4182,1611,4284,1695" href="#">
+						<div class="popuptext" id="Vanuatu">
+							<!--ImageofCountry --><img class="popupflag" src="images/flags/vanuatu.jpg" alt="Vanuatu">
+							<!--Name of Country--><h4 class="NC">Vanuatu</h4>
+							<div class="infotext">
+							<!-- Capital-->	      <h4 class="Ca">Capital - Port Vila</h4>
+							<!-- Leader -->		  <h4 class="Le">Prime Minister - Ishmael Kalsakau</h4>
+												  <h4 class="Le">President - Nikenike Vurobaravu</h4>
+							<!-- Population -->	  <h4 class="Po">Population - 319,137 (2021)</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 12,189 km2</h4>
+							<!-- Continent -->	  <h4 class="Co">Continent - Oceania</h4>
+							</div>
+						</div>
+					</div>
+					<div class="popup" onclick="FijiFunction()"><area shape="rect" coords="4317,1639,4362,1678" href="#">
+						<div class="popuptext" id="Fiji">
+							<!--ImageofCountry --><img class="popupflag" src="images/flags/fiji.jpg" alt="Fiji">
+							<!--Name of Country--><h4 class="NC">Fiji</h4>
+							<div class="infotext">
+							<!-- Capital-->	      <h4 class="Ca">Capital - Suva</h4>
+							<!-- Leader -->		  <h4 class="Le">Prime Minister - Sitiveni Rabuka</h4>
+							<!-- Population -->	  <h4 class="Po">Population - 924,610 (2021)</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 18,274 km2</h4>
+							<!-- Continent -->	  <h4 class="Co">Continent - Oceania</h4>
+							</div>
+						</div>
+					</div>
+					<div class="popup" onclick="TongaFunction()"><area shape="rect" coords="4317,1639,4362,1678" href="#">
+						<div class="popuptext" id="Tonga">
+							<!--ImageofCountry --><img class="popupflag" src="images/flags/tonga.jpg" alt="Tonga">
+							<!--Name of Country--><h4 class="NC">Tonga</h4>
+							<div class="infotext">
+							<!-- Capital-->	      <h4 class="Ca">Capital - Nuku'alofa</h4>
+							<!-- Leader -->		  <h4 class="Le">Prime Minister - Sitiveni Rabuka</h4>
+							<!-- Population -->	  <h4 class="Po">Population - 106,017 (2021)</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 748 km2</h4>
+							<!-- Continent -->	  <h4 class="Co">Continent - Oceania</h4>
+							</div>
+						</div>
+					</div>
 				</map>
 			</div>
 		</div>
@@ -81,10 +135,6 @@
 	<a href="https://www.vectorstock.com/royalty-free-vector/gray-map-world-with-countries-borders-vector-29938910" target="_blank">Vector Map by VectorStock / Created by Robot</a>
 	</footer>
 	<script type="text/javascript" src="scripts/jquery.rwdImageMaps.min.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(e) {
-        $('img[usemap]').rwdImageMaps();
-    });
-	</script>
+	<script type="text/javascript">$(document).ready(function(e) {$('img[usemap]').rwdImageMaps();});</script>
 	</body>
 </html>
