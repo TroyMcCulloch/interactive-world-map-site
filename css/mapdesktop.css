@@ -133,6 +133,7 @@ a:hover, a:active{
     padding: 5px 0;
     position: fixed;
     right: 2vw;
+    top: 6vh;
     z-index: 1;
 }
 .popup .show {
