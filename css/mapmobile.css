@@ -145,18 +145,18 @@ a:link, a:visited {
     flex-direction: column;
 }
 .popup .popuptext{
-    visibility:hidden;
+	visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s;
     width: 96vw;
-    height: 40vh;
+    height: 37vh;
     background-color: #6290B7;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
     position: fixed;
-    bottom: 10.1vh;
+    top: 51vh;
     right: 2vw;
     z-index: 1;
     min-width: 0px;

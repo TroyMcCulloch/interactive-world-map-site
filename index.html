@@ -21,7 +21,6 @@
 		<link href="css/1460mapdesktop.css" rel="stylesheet" type="text/css" media="(min-width:1460px)">
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="scripts/countryfunctions.js"></script>
 	</head>
 	<body>
 			<div id="title"><h1>Interactive Map</h1></div>
@@ -285,7 +284,7 @@
 						</div>
 					</div></span>
 					
-				<!-- Americas -->
+				<!-- Americas --><span>
 					<div class="popup" onclick="USFunction()"><area coords="548,768,548,856,564,921,612,985,660,1009,701,1017,773,1025,821,1049,854,1066,886,1098,910,1049,974,1049,1031,1033,1063,1049,1087,1106,1095,1009,1160,969,1144,905,1184,872,1256,824,1240,808,1095,856,1039,800,999,760,950,784,934,768" shape="poly" href="#">
 						<div class="popuptext" id="US">
 							<!--ImageofCountry --><img class="popupflag" src="images/flags/us.jpg" alt="United States">
@@ -299,7 +298,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="popup" onclick="CanadaFunction()"><area coords="338,365,346,566,572,768,926,776,1071,832,1119,848,1224,816,1264,752,1409,719,1337,639,1297,558,1337,446,1152,260,1176,156,1232,91,1337,43,1184,3,991,35,797,107,604,172" shape="poly" href="#">
+					<div class="popup" onclick="CanadaFunction()"><area coords="337,364,337,563,365,559,380,579,404,567,432,587,460,619,484,655,476,682,508,726,563,754,913,758,985,782,1013,762,1041,794,1088,806,1096,829,1072,857,1112,853,1100,841,1144,833,1204,818,1232,786,1259,794,1263,829,1295,849,1478,786,1407,674,1299,559,1347,420,1136,253,1136,201,1196,134,1267,86,1323,58,1347,27,1196,3,989,31,643,158,567,209,520,317,480,356" shape="poly" href="#">
 						<div class="popuptext" id="Canada">
 							<!--ImageofCountry --><img class="popupflag" src="images/flags/canada.jpg" alt="Canada">
 							<!--Name of Country--><h4 class="NC">Canada</h4>
@@ -312,7 +311,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="popup" onclick="AlaskaFunction()"><area coords="0,711,322,566,322,357,121,293,0,357" shape="poly">
+					<div class="popup" onclick="AlaskaFunction()"><area coords="480,657,456,709,329,574,249,574,174,625,3,697,3,669,118,606,34,590,-1,570,27,502,74,486,3,474,7,419,15,383,118,335,229,335,337,363,337,558,365,558,376,582,408,574,440,606" shape="poly">
 						<div class="popuptext" id="Alaska">
 							<!--ImageofCountry --><img class="popupflag" src="images/flags/alaska.jpg" alt="Alaska">
 							<!--Name of Country--><h4 class="NC">Alaska</h4>
@@ -481,13 +480,39 @@
 							</div>
 						</div>
 					</div>
-				</map>
+					<div class="popup" onclick="BahamasFunction()"><area coords="1124,1084,1180,1120,1152,1151,1096,1120" shape="poly">
+						<div class="popuptext" id="Bahamas">
+							<!--ImageofCountry --><img class="popupflag" src="images/flags/bahamas.jpg" alt="Bahamas">
+							<!--Name of Country--><h4 class="NC">Bahamas</h4>
+							<div class="infotext">
+							<!-- Capital-->	      <h4 class="Ca">Capital - Nassau</h4>
+							<!-- Leader -->		  <h4 class="Le">Prime Minister - Philip Davis</h4>
+							<!-- Population -->	  <h4 class="Po">Population - 399,314 (2022)</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 13,878 km2</h4>
+							<!-- Continent -->	  <h4 class="Co">Continent - North America</h4>
+							</div>
+						</div>
+					</div>
+					<div name="count" class="popup" onclick="ElsalvadorFunction()"><area coords="981,1267,1005,1251" shape="rect">
+						<div class="popuptext" id="Elsalvador">
+							<!--ImageofCountry --><img class="popupflag" src="images/flags/elsalvador.jpg" alt="Elsalvador">
+							<!--Name of Country--><h4 class="NC">El Salvador</h4>
+							<div class="infotext">
+							<!-- Capital-->	      <h4 class="Ca">Capital - San Salvador</h4>
+							<!-- Leader -->		  <h4 class="Le">President - Nayib Bukele</h4>
+							<!-- Population -->	  <h4 class="Po">Population - 399,314 (2022)</h4>
+							<!-- Area/Landmass --><h4 class="AL">Area - 13,878 km2</h4>
+							<!-- Continent -->	  <h4 class="Co">Continent - North America</h4>
+							</div>
+						</div>
+					</div>
 				</map>
 			</div>
 		</div>
 	<footer>
 	<a href="https://www.vectorstock.com/royalty-free-vector/gray-map-world-with-countries-borders-vector-29938910" target="_blank">Vector Map by VectorStock / Created by Robot</a>
 	</footer>
+	<script src="scripts/countryfunctions.js"></script>
 	<script type="text/javascript" src="scripts/jquery.rwdImageMaps.min.js"></script>
 	<script type="text/javascript">$(document).ready(function(e) {$('img[usemap]').rwdImageMaps();});</script>
 	</body>

@@ -1,17 +1,40 @@
-function NZFunction() { 
-	var popup = document.getElementById("NZ"); popup.classList.toggle("show");
+
+var otherpop = document.querySelectorAll(".popup");;
+
+function NZFunction() {
+	var popup = document.getElementById("NZ"); 
+	popup.classList.toggle("show");
 	$(document.getElementById("worldmapbody")).toggleClass('alt'); 
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
+	if (document.getElementById("NZ").style.display == "none"){
+	otherpop.style.display = "none";
+	popup.style.display = "block";
+	} else {
+	popup.style.display = "none";
+	}
 }
 function AUFunction() { 
-	var popup = document.getElementById("Aust"); popup.classList.toggle("show");
+	var popup = document.getElementById("Aust"); 
+	popup.classList.toggle("show");
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
+	if (document.getElementById("Aust").style.display == "none"){
+	otherpop.style.display = "none";
+	popup.style.display = "block";
+	} else {
+	popup.style.display = "none";
+	}
 }
 function PapuaFunction() { 
 	var popup = document.getElementById("PapuaNew"); popup.classList.toggle("show");
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
+	if (document.getElementById("PapuaNew").style.display == "none"){
+	otherpop.style.display = "none";
+	popup.style.display = "block";
+	} else {
+	popup.style.display = "none";
+	}
 }
 function SolomonFunction() { 
 	var popup = document.getElementById("Solomon"); popup.classList.toggle("show");
@@ -168,3 +191,16 @@ function HondurasFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
 }
+function BahamasFunction() { 
+	var popup = document.getElementById("Bahamas"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ElsalvadorFunction() { 
+	var popup = document.getElementById("Elsalvador"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+
+
+
