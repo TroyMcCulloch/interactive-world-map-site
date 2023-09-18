@@ -183,9 +183,101 @@ function ElsalvadorFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
 }
-
-/* New Countries */
-
+function BelizeFunction() { 
+	var popup = document.getElementById("Belize"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function NicaraguaFunction() { 
+	var popup = document.getElementById("Nicaragua"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function BrazilFunction() { 
+	var popup = document.getElementById("Brazil"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ArgentinaFunction() { 
+	var popup = document.getElementById("Argentina"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ColombiaFunction() { 
+	var popup = document.getElementById("Colombia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function PeruFunction() { 
+	var popup = document.getElementById("Peru"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ChileFunction() { 
+	var popup = document.getElementById("Chile"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function EcuadorFunction() { 
+	var popup = document.getElementById("Ecuador"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function BoliviaFunction() { 
+	var popup = document.getElementById("Bolivia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function VenezuelaFunction() { 
+	var popup = document.getElementById("Venezuela"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function GuyanaFunction() { 
+	var popup = document.getElementById("Guyana"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function UruguayFunction() { 
+	var popup = document.getElementById("Uruguay"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ParaguayFunction() { 
+	var popup = document.getElementById("Paraguay"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function FrenchGuianaFunction() { 
+	var popup = document.getElementById("FrenchGuiana"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function SurinameFunction() { 
+	var popup = document.getElementById("Suriname"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function TrinidadandTobagoFunction() { 
+	var popup = document.getElementById("TrinidadandTobago"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function FalklandIslandsFunction() { 
+	var popup = document.getElementById("FalklandIslands"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function GeorgiaandtheSouthSandwichIslandsFunction() { 
+	var popup = document.getElementById("GeorgiaandtheSouthSandwichIslands"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ItalyFunction() { 
+	var popup = document.getElementById("Italy"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
 function GermanyFunction() { 
 	var popup = document.getElementById("Germany"); popup.classList.toggle("show");
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
@@ -223,6 +315,51 @@ function PolandFunction() {
 }
 function UkraineFunction() { 
 	var popup = document.getElementById("Ukraine"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function AustriaFunction() { 
+	var popup = document.getElementById("Austria"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function BelgiumFunction() { 
+	var popup = document.getElementById("Belgium"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function SwedenFunction() { 
+	var popup = document.getElementById("Sweden"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function CroatiaFunction() { 
+	var popup = document.getElementById("Croatia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function NorwayFunction() { 
+	var popup = document.getElementById("Norway"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function DenmarkFunction() { 
+	var popup = document.getElementById("Denmark"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function IrelandFunction() { 
+	var popup = document.getElementById("Ireland"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function RomaniaFunction() { 
+	var popup = document.getElementById("Romania"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function AlbaniaFunction() { 
+	var popup = document.getElementById("Albania"); popup.classList.toggle("show");
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
 }
