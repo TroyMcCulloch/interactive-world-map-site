@@ -363,3 +363,58 @@ function AlbaniaFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
 }
+function SerbiaFunction() { 
+	var popup = document.getElementById("Serbia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function AlbaniaFunction() { 
+	var popup = document.getElementById("Albania"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function CzechiaFunction() { 
+	var popup = document.getElementById("Czechia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function HungaryFunction() { 
+	var popup = document.getElementById("Hungary"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function SloveniaFunction() { 
+	var popup = document.getElementById("Slovenia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function BulgariaFunction() { 
+	var popup = document.getElementById("Bulgaria"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function LuxembourgFunction() { 
+	var popup = document.getElementById("Luxembourg"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function CyprusFunction() { 
+	var popup = document.getElementById("Cyprus"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function MontenegroFunction() { 
+	var popup = document.getElementById("Montenegro"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function EstoniaFunction() { 
+	var popup = document.getElementById("Estonia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function LithuaniaFunction() { 
+	var popup = document.getElementById("Lithuania"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
