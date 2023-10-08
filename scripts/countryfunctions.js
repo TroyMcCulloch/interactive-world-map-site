@@ -493,7 +493,51 @@ function GibraltarFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
 }
-
+function IcelandFunction() { 
+	var popup = document.getElementById("Iceland"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function FinlandFunction() { 
+	var popup = document.getElementById("Finland"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function MaltaFunction() { 
+	var popup = document.getElementById("Malta"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function JapanFunction() { 
+	var popup = document.getElementById("Japan"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function IndiaFunction() { 
+	var popup = document.getElementById("India"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ChinaFunction() { 
+	var popup = document.getElementById("China"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function IndonesiaFunction() { 
+	var popup = document.getElementById("Indonesia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function SouthKoreaFunction() { 
+	var popup = document.getElementById("SouthKorea"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ThailandFunction() { 
+	var popup = document.getElementById("Thailand"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
 
 
 
