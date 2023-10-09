@@ -91,8 +91,11 @@ a:link, a:visited {
     display: flex;
     justify-content: center;
     overflow: auto;
+}
+#worldmapoverlay{
+	z-index:100;
 } 
-#worldmapimg{
+#worldmapimg, #worldmapoverlay{
     height: 150%;
     width: auto;
     margin: 3%;
@@ -186,6 +189,14 @@ h4{
     text-decoration: underline;
     font-family: 'Righteous', cursive;
     text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
+}
+.windowclose{
+	position: absolute;
+    z-index: 1;
+    top: -2vh;
+    right: 0.3vw;
+    font-size: 1.3em;
+    font-family: cursive;
 }
 
 /* Bottom Section - Footer  */

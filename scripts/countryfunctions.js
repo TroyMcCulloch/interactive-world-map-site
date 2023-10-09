@@ -538,7 +538,40 @@ function ThailandFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
 }
-
-
+function SingaporeFunction() { 
+	var popup = document.getElementById("Singapore"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function PhilippinesFunction() { 
+	var popup = document.getElementById("Philippines"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function VietnamFunction() { 
+	var popup = document.getElementById("Vietnam"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function MalaysiaFunction() { 
+	var popup = document.getElementById("Malaysia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function HongKongFunction() { 
+	var popup = document.getElementById("HongKong"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function PakistanFunction() { 
+	var popup = document.getElementById("Pakistan"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function AfghanistanFunction() { 
+	var popup = document.getElementById("Afghanistan"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
 
 

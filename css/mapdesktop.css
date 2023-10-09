@@ -92,6 +92,10 @@ a:hover, a:active{
 	
 }#worldmapbody.alt{
 }
+#worldmapoverlay{
+	z-index:100;
+
+}
 #worldmapimg{
 	height: 95%;
     margin: 1%;
@@ -173,6 +177,14 @@ h4{
     top: -2vw;
     font-family: 'Righteous', cursive;
 	text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
+}
+.windowclose{
+	position: absolute;
+    z-index: 1;
+    top: -2vh;
+    right: 0.3vw;
+    font-size: 1.3em;
+    font-family: cursive;
 }
 
 	/* Bottom Section - Footer  */
