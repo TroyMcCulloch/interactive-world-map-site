@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	
-		<title>Flag Quiz</title>
+<head>
+   <title>Flag Quiz</title>
 			
 			<link rel="icon" type="images/png" href="images/favicon.png">
 			<meta charset="UTF-8">
@@ -13,36 +12,38 @@
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-		
-	</head>
-	
-	<body>
-			<div id="title"><h1>Interactive Map</h1></div>
-		<nav>
+</head>
+<body>
+    <div id="title">
+        <h1>Interactive Map</h1>
+    </div>
+    <nav>
 			<div class="link"><a href="index.html"><h2>World Map</h2></a></div>
 			<div class="endlink"><a href="flagquiz.html"><h2>Flag Quiz</h2></a></div>
-		</nav>
-		
-		<div id="flagquiz">
-			<div class="top">
-				<img src="images/united.jpg" alt="unitedkingdomflag"> 
-			</div>
-			
-			<div class="bottom">
-				<div class="bottom1">
-					<div class="answer1"> <p>United Kingdom</p> </div>
-					<div class="answer2"> <p>New Zealand</p> </div>
-				</div>
-				<div class="bottom2">
-					<div class="answer3"> <p>Australia</p> </div>
-					<div class="answer4"> <p>Canada</p> </div>
-				</div>
-			</div>
-		
-		
+	</nav>
+    <div id="flagquiz">
+	
+        <div class="top">
+        <div id="scoreboard" class="score">
+			<p>Score: <span id="score">0</span>/<span id="totalQuestions">0</span></p>
 		</div>
-		
+        <img id="flagImage" src="images/united.jpg" alt="Flag Image">
+        <button id="next" class="hide">Next</button> <!-- Move the button here -->
 
-	<footer></footer>	
-	</body>
+
+        </div>
+        <div class="bottom">
+            <div class="column">
+                <button class="answer correct-answer"><p>United Kingdom</p></button>
+                <button class="answer incorrect-answer"><p>New Zealand</p></button>
+            </div>
+            <div class="column">
+                <button class="answer incorrect-answer"><p>Australia</p></button>
+                <button class="answer incorrect-answer"><p>Canada</p></button>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="script/javascript.js"></script>
+</body>
 </html>
