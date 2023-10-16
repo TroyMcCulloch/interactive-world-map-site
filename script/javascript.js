@@ -12,13 +12,13 @@ const questions = [
   
   {
         flagImage: 'images/new-zealand.jpg',
-        options: ['United Kingdom', 'New Zealand', 'Australia', 'Canada'],
+        options: ['Australia', 'New Zealand', 'Belarus', 'Mexico'],
         correctAnswer: 'New Zealand',
     },
   
   {
         flagImage: 'images/australia.jpg',
-        options: ['United Kingdom', 'New Zealand', 'Australia', 'Canada'],
+        options: ['Togo', 'Fiji', 'Australia', 'Moldova'],
         correctAnswer: 'Australia',
     },
   
@@ -27,6 +27,12 @@ const questions = [
         options: ['United Kingdom', 'New Zealand', 'Australia', 'Canada'],
         correctAnswer: 'Canada',
     },
+	
+  {
+        flagImage: 'images/tonga.jpg',
+        options: ['Tonga', 'Jamaica', 'Cuba', 'Haiti'],
+        correctAnswer: 'Tonga',
+    },	
     // Add more questions here...
 ];
 
@@ -62,11 +68,14 @@ function checkAnswer(answer, questionIndex) {
         // If there are more questions, show the "Next" button for the next question
         nextButton.classList.remove('hide');
         nextButton.textContent = 'Next';
-        nextButton.addEventListener('click', () => loadQuestion(currentQuestion + 1));
+        // Remove the event listener for the "Next" button before adding it again
+        nextButton.removeEventListener('click', () => loadQuestion(currentQuestion + 1));
+/*         nextButton.addEventListener('click', () => loadQuestion(currentQuestion + 1)); */
     } else {
         // If all questions have been answered, show the "Restart" button
         nextButton.classList.remove('hide');
         nextButton.textContent = 'Restart';
+        nextButton.removeEventListener('click', () => loadQuestion(currentQuestion + 1));
         nextButton.addEventListener('click', restartQuiz);
     }
 }
@@ -80,12 +89,17 @@ function restartQuiz() {
     nextButton.textContent = 'Next';
     loadQuestion(currentQuestion);
     nextButton.classList.add('hide');
+    // Remove the event listener for the "Next" button
+    nextButton.removeEventListener('click', restartQuiz);
 }
 
 nextButton.addEventListener('click', () => {
-    if (currentQuestion < questions.length) {
+    if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
         loadQuestion(currentQuestion);
         nextButton.classList.add('hide');
+    } else {
+        restartQuiz();
     }
 });
 
