@@ -913,3 +913,115 @@ function BurkinaFasoFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
 }
+function CentralAfricanRepublicFunction() { 
+	var popup = document.getElementById("CentralAfricanRepublic"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function RwandaFunction() { 
+	var popup = document.getElementById("Rwanda"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function NamibiaFunction() { 
+	var popup = document.getElementById("Namibia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ZimbabweFunction() { 
+	var popup = document.getElementById("Zimbabwe"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function GuineaFunction() { 
+	var popup = document.getElementById("Guinea"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ZambiaFunction() { 
+	var popup = document.getElementById("Zambia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function CapeVerdeFunction() { 
+	var popup = document.getElementById("CapeVerde"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function MozambiqueFunction() { 
+	var popup = document.getElementById("Mozambique"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function TogoFunction() { 
+	var popup = document.getElementById("Togo"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function BeninFunction() { 
+	var popup = document.getElementById("Benin"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function LiberiaFunction() { 
+	var popup = document.getElementById("Liberia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function ChadFunction() { 
+	var popup = document.getElementById("Chad"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function MauritiusFunction() { 
+	var popup = document.getElementById("Mauritius"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function BotswanaFunction() { 
+	var popup = document.getElementById("Botswana"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function SouthSudanFunction() { 
+	var popup = document.getElementById("SouthSudan"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function TheGambiaFunction() { 
+	var popup = document.getElementById("TheGambia"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function MalawiFunction() { 
+	var popup = document.getElementById("Malawi"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function DjiboutiFunction() { 
+	var popup = document.getElementById("Djibouti"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function EquatorialGuineaFunction() { 
+	var popup = document.getElementById("EquatorialGuinea"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function BurundiFunction() { 
+	var popup = document.getElementById("Burundi"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function MauritaniaFunction() { 
+	var popup = document.getElementById("Mauritania"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function EritreaFunction() { 
+	var popup = document.getElementById("Eritrea"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+
+
