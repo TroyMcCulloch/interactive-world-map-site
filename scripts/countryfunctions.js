@@ -1048,6 +1048,17 @@ function LesothoFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
 }
+function RepublicoftheCongoFunction() { 
+	var popup = document.getElementById("RepublicoftheCongo"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function GuineaBissauFunction() { 
+	var popup = document.getElementById("GuineaBissau"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+
 
 
 
