@@ -1023,5 +1023,31 @@ function EritreaFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');
 }
+function EswatiniFunction() { 
+	var popup = document.getElementById("Eswatini"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function SierraLeoneFunction() { 
+	var popup = document.getElementById("SierraLeone"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function WesternSaharaFunction() { 
+	var popup = document.getElementById("WesternSahara"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function SeychellesFunction() { 
+	var popup = document.getElementById("Seychelles"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+function LesothoFunction() { 
+	var popup = document.getElementById("Lesotho"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');
+}
+
 
 
