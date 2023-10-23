@@ -1,7 +1,4 @@
-#worldmapoverlay{
-	z-index:100;
-}
-#worldmapimg, #worldmapoverlay{
+#worldmapimg{
     height: 97%;
     width: auto;
     position: absolute;

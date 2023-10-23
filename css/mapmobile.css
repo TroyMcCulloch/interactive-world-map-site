@@ -67,7 +67,7 @@ a:link, a:visited {
 
 #worldmapborder{
 	background-color: #1D3D5B;
-    height: 75vh;
+    height: 76vh;
     width: 100%;
 }
 #worldmapbody{
@@ -92,10 +92,7 @@ a:link, a:visited {
     justify-content: center;
     overflow: auto;
 }
-#worldmapoverlay{
-	z-index:100;
-} 
-#worldmapimg, #worldmapoverlay{
+#worldmapimg{
     height: 150%;
     width: auto;
     margin: 3%;
@@ -119,20 +116,47 @@ a:link, a:visited {
     user-select: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+#worldmapoverlay{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    height: 158%;
+    width: 1202%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+}
+#worldmapoverlay.alt{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    height: 161%;
+    width: 1569px;
+    min-width: 50%;
+    max-width: 518%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+}
 
  /* World Map - Popup */
 
 .popupflag{
-    max-width: 50%;
+	max-width: 50%;
     max-height: 50.34%;
     width: auto;
     height: auto;
     position: relative;
-    border: 5px solid #4e6f8b;
+    border: 5px solid #3a6182;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     left: -22vw;
     top: 7vh;
+    box-sizing: border-box;
 }
 .infotext{
     text-align: left;
@@ -140,7 +164,7 @@ a:link, a:visited {
     width: auto;
     font-size: 1.7vh;
     position: absolute;
-    top: 18vw;
+    top: 7vh;
     left: 50vw;
     font-family: 'Righteous', cursive;
     display: inline-flex;
@@ -202,9 +226,9 @@ h4{
 /* Bottom Section - Footer  */
 
 footer{
-    background-color: #3A6182;
+	background-color: #3A6182;
     width: 98%;
-    height: 8vh;
+    height: 6vh;
     margin: 2%;
     font-size: 0.8em;
 }
