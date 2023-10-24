@@ -155,21 +155,22 @@ a:link, a:visited {
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     left: -22vw;
-    top: 7vh;
+    top: 9vh;
     box-sizing: border-box;
 }
 .infotext{
     text-align: left;
-    height: 80%;
+    height: 75%;
     width: auto;
     font-size: 1.7vh;
     position: absolute;
-    top: 7vh;
+    top: 9vh;
     left: 50vw;
     font-family: 'Righteous', cursive;
     display: inline-flex;
     text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
     flex-direction: column;
+    overflow: scroll;
 }
 .popup .popuptext{
 	visibility: hidden;
@@ -203,11 +204,12 @@ h4{
     position: relative;
 }
 .NC{
-    font-size: 3vh;
-    margin: 0.8em 0em 0.8em 0.3em;
-    width: 200%;
+    font-size: 157%;
+    margin: 0.8em 0.3em 0.8em 0.3em;
+    width: 98%;
+    height: 13%;
     position: absolute;
-    left: -50vw;
+    left: 0vw;
     top: 0vw;
     text-align: center;
     text-decoration: underline;
