@@ -214,3 +214,7 @@ footer{
     height: 2vw;
     margin: 1%;
 }
+p{
+	color: white;
+    font-family: 'Righteous', cursive;
+}

@@ -703,11 +703,6 @@ function BruneiFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');$(document.getElementById("worldmapoverlay")).toggleClass('alt');
 }
-function PalestineFunction() { 
-	var popup = document.getElementById("Palestine"); popup.classList.toggle("show");
-	$(document.getElementById("worldmapbody")).toggleClass('alt');
-	$(document.getElementById("worldmapimg")).toggleClass('alt');$(document.getElementById("worldmapoverlay")).toggleClass('alt');
-}
 function BritishIndianOceanTerritoryFunction() { 
 	var popup = document.getElementById("BritishIndianOceanTerritory"); popup.classList.toggle("show");
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
