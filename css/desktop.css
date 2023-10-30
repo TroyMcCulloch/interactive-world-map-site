@@ -90,8 +90,7 @@ a:hover, a:active{
 
 #flagImage {
     border: 7px solid black;
-    width: 76vw;
-    max-width: 400px;
+    max-height: 200px;
     height: auto;
     top: 8.7vh;
     position: relative;
@@ -103,6 +102,11 @@ a:hover, a:active{
     display: block; /* Ensure the button is displayed as a block element */
     margin: 120px auto; /* Adjust the margin for vertical positioning */
     text-align: center; /* Center-align the button */
+	background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #next.hide {
@@ -116,7 +120,15 @@ a:hover, a:active{
 	margin:auto 10px;
 	left:43vw;
 	top:15px;
-	font-size:50px;
+	font-size:40px;
+}
+
+.correct-answer {
+    background-color: green;
+}
+
+.incorrect-answer {
+    background-color: red;
 }
 
 #flagquiz{
@@ -174,14 +186,9 @@ img{
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-}
-
-.answer p {
-    color: white;
+	color: white;
     font-size: 1.5vw; /* Adjust the font size as needed */
     font-family: 'Righteous', cursive;
-    margin: 0;
-    padding: 0;
 }
 
 .answer:nth-child(2),

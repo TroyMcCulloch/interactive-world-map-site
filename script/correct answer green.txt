@@ -1,0 +1,26 @@
+function checkAnswer(answer, questionIndex) {
+    const selectedAnswer = answer.textContent;
+    const correctAnswer = questions[questionIndex].correctAnswer;
+    if (selectedAnswer === correctAnswer) {
+        answer.classList.add('correct-answer');
+        answer.style.backgroundColor = 'green'; // Change background color to green
+        score++; // Increase the score if the answer is correct
+        scoreDisplay.textContent = score;
+    } else {
+        answer.classList.add('incorrect-answer');
+    }
+    answers.forEach((ans) => ans.removeEventListener('click', checkAnswer));
+
+    if (currentQuestion < questions.length - 1) {
+        // If there are more questions, show the "Next" button for the next question
+        nextButton.classList.remove('hide');
+        nextButton.textContent = 'Next';
+        nextButton.removeEventListener('click', () => loadQuestion(currentQuestion + 1));
+    } else {
+        // If all questions have been answered, show the "Restart" button
+        nextButton.classList.remove('hide');
+        nextButton.textContent = 'Restart';
+        nextButton.removeEventListener('click', () => loadQuestion(currentQuestion + 1));
+        nextButton.addEventListener('click', restartQuiz);
+    }
+}

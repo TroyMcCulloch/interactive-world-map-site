@@ -1,6 +1,13 @@
 const flagImage = document.getElementById('flagImage');
 const answers = document.querySelectorAll('.answer');
 const nextButton = document.getElementById('next');
+const restartButton = document.getElementById('restart');
+const scoreDisplay = document.getElementById('score');
+const totalQuestionsDisplay = document.getElementById('totalQuestions');
+
+let currentQuestion = 0;
+let score = 0;
+let hasRestarted = false; // Flag to track if the quiz has been restarted
 
 let currentQuestion = 0;
 const questions = [
@@ -126,23 +133,14 @@ const questions = [
     },	 */	
     // Add more questions here...
 ];
-
-
-
-nextButton.classList.add('hide');
-
-const scoreDisplay = document.getElementById('score');
-const totalQuestionsDisplay = document.getElementById('totalQuestions');
-let score = 0;
-
-let hasRestarted = false;
-
 function checkAnswer(answer, questionIndex) {
     const selectedAnswer = answer.textContent;
     const correctAnswer = questions[questionIndex].correctAnswer;
+
     if (selectedAnswer === correctAnswer) {
         answer.classList.add('correct-answer');
         answer.style.backgroundColor = 'green'; // Change background color to green for the correct answer
+
         if (!hasRestarted) {
             score++; // Increase the score by 1 if the answer is correct and not after a restart
             scoreDisplay.textContent = score;
@@ -151,27 +149,31 @@ function checkAnswer(answer, questionIndex) {
         answer.classList.add('incorrect-answer');
         answer.style.backgroundColor = 'red'; // Change background color to red for incorrect answers
     }
+
     answers.forEach((ans) => ans.removeEventListener('click', checkAnswer));
 
     if (currentQuestion < questions.length - 1) {
         // If there are more questions, show the "Next" button for the next question
         nextButton.classList.remove('hide');
-        nextButton.textContent = 'Next';
         nextButton.removeEventListener('click', () => loadQuestion(currentQuestion + 1));
     } else {
         // If all questions have been answered, show the "Restart" button
-        nextButton.classList.remove('hide');
-        nextButton.textContent = 'Restart';
-        nextButton.removeEventListener('click', () => loadQuestion(currentQuestion + 1));
-        nextButton.addEventListener('click', restartQuiz);
+        nextButton.classList.add('hide');
+        restartButton.classList.remove('hide');
     }
 }
 
-
-
-
-
-
+function restartQuiz() {
+    hasRestarted = true; // Set the restart flag
+    score = 0; // Reset the score to 0
+    scoreDisplay.textContent = score; // Update the displayed score
+    currentQuestion = 0;
+    nextButton.textContent = 'Next';
+    loadQuestion(currentQuestion);
+    nextButton.classList.remove('hide');
+    restartButton.classList.add('hide');
+    answers.forEach((ans) => ans.addEventListener('click', () => checkAnswer(ans, currentQuestion)));
+}
 
 function loadQuestion(questionIndex) {
     const question = questions[questionIndex];
@@ -184,12 +186,8 @@ function loadQuestion(questionIndex) {
     });
 }
 
-
 // Initialize the total number of questions
 totalQuestionsDisplay.textContent = questions.length;
-
-
-
 
 nextButton.addEventListener('click', () => {
     if (currentQuestion < questions.length - 1) {
@@ -201,19 +199,6 @@ nextButton.addEventListener('click', () => {
     }
 });
 
+restartButton.addEventListener('click', restartQuiz); // Handle restart button
+
 loadQuestion(currentQuestion);
-
-function restartQuiz() {
-    hasRestarted = true; // Set the restart flag
-    score = 0; // Reset the score to 0
-    scoreDisplay.textContent = score; // Update the displayed score
-    currentQuestion = 0;
-    nextButton.textContent = 'Next';
-    loadQuestion(currentQuestion);
-    nextButton.classList.add('hide');
-    answers.forEach((ans) => ans.addEventListener('click', () => checkAnswer(ans, currentQuestion)));
-    // Remove the event listener for the "Next" button
-    nextButton.removeEventListener('click', restartQuiz);
-}
-
-// ... (the rest of your code remains the same)
