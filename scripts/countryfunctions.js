@@ -1053,6 +1053,11 @@ function GuineaBissauFunction() {
 	$(document.getElementById("worldmapbody")).toggleClass('alt');
 	$(document.getElementById("worldmapimg")).toggleClass('alt');$(document.getElementById("worldmapoverlay")).toggleClass('alt');
 }
+function FrenchSouthernandAntarcticLandsFunction() { 
+	var popup = document.getElementById("FrenchSouthernandAntarcticLands"); popup.classList.toggle("show");
+	$(document.getElementById("worldmapbody")).toggleClass('alt');
+	$(document.getElementById("worldmapimg")).toggleClass('alt');$(document.getElementById("worldmapoverlay")).toggleClass('alt');
+}
 
 
 

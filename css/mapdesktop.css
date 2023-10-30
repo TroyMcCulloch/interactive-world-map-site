@@ -115,18 +115,17 @@ a:hover, a:active{
     opacity: 0;
 }
 #worldmapoverlay.alt{
-	display: block;
+    display: block;
     position: absolute;
     z-index: 1;
-    height: 100%;
-    width: 2192px;
-    min-width: 121%;
-    max-width: 564%;
+    height: 97%;
+    width: auto;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     opacity: 0;
+    left: 0vw;
 }
 
 	/* World Map - Popup */
