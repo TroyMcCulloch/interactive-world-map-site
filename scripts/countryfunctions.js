@@ -1,5 +1,6 @@
 
 var otherpop = document.querySelectorAll(".popup");;
+document.querySelectorAll(":not([id^='country'])")
 
 function NZFunction() {
 	var popup = document.getElementById("NZ"); 
