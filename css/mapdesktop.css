@@ -1,3 +1,6 @@
+
+	/* Top Section - Nav Bar */
+
 body{
     background-color: #3A6182;
     height: 100%;
@@ -68,6 +71,9 @@ a:hover, a:active{
 	text-decoration:underline;
 	color:white;
 }
+
+	/* Middle Section - World Map */
+
 #worldmapborder{
     background-color: #1D3D5B;
     height: 83vh;
@@ -83,16 +89,8 @@ a:hover, a:active{
     display: flex;
     justify-content: center;
 	overflow: auto;
-}#worldmapbody .alt{
-    background-color: #C4DAF2;
-    position: relative;
-    width: 96%;
-    height: 100%;
-    right: -2%;
-    left: 2%;
-    display: flex;
-    justify-content: center;
-	overflow: auto;
+	
+}#worldmapbody.alt{
 }
 #worldmapimg{
 	height: 95%;
@@ -106,13 +104,32 @@ a:hover, a:active{
     width: auto;
 	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
-
-footer{
-    background-color: #3A6182;
-    width: 98%;
-    height: 2vw;
-    margin: 1%;
+#worldmapimg.alt{
 }
+#worldmapoverlay{
+	display: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+}
+#worldmapoverlay.alt{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    height: 97%;
+    width: auto;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+    left: 0vw;
+}
+
+	/* World Map - Popup */
+
 .popup {
   position: relative;
   display: inline-block;
@@ -137,6 +154,7 @@ footer{
     padding: 5px 0;
     position: fixed;
     right: 2vw;
+    top: 6vh;
     z-index: 1;
 }
 .popup .show {
@@ -146,15 +164,16 @@ footer{
   animation: fadeIn 1s;
 }
 .popupflag{
-	max-width: 97%;
+    max-width: 100%;
     max-height: 32.34%;
     height: auto;
-    width: auto;
+    width: 100%;
     position: relative;
-    border: 5px solid #4e6f8b;
+    border: 5px solid #3a6182;
     top: -0.6vh;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
+    box-sizing: border-box;
 }
 .infotext{
     text-align: center;
@@ -176,4 +195,25 @@ h4{
     top: -2vw;
     font-family: 'Righteous', cursive;
 	text-shadow: -1px -1px 0 #1D3D5B, 1px -1px 0 #1D3D5B, -1px 1px 0 #1D3D5B, 1px 1px 0 #1D3D5B;
+}
+.windowclose{
+	position: absolute;
+    z-index: 1;
+    top: -2vh;
+    right: 0.3vw;
+    font-size: 1.3em;
+    font-family: cursive;
+}
+
+	/* Bottom Section - Footer  */
+
+footer{
+    background-color: #3A6182;
+    width: 98%;
+    height: 2vw;
+    margin: 1%;
+}
+p{
+	color: white;
+    font-family: 'Righteous', cursive;
 }
