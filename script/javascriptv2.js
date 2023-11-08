@@ -140,7 +140,8 @@ function checkAnswer(answer, questionIndex) {
     if (selectedAnswer === correctAnswer) {
         answer.classList.add('correct-answer');
         answer.style.backgroundColor = 'green'; // Change background color to green for the correct answer
-
+		score++;
+		scoreDisplay.textContent = score;
         if (!hasRestarted) {
             score++; // Increase the score by 1 if the answer is correct and not after a restart
             scoreDisplay.textContent = score;

@@ -143,6 +143,7 @@ function checkAnswer(answer, questionIndex) {
     if (selectedAnswer === correctAnswer) {
         answer.classList.add('correct-answer');
         answer.style.backgroundColor = 'green'; // Change background color to green for the correct answer
+		$(document.getElementById("overlay")).toggleClass('alt'); 
         if (!hasRestarted) {
             score++; // Increase the score by 1 if the answer is correct and not after a restart
             scoreDisplay.textContent = score;
@@ -196,6 +197,7 @@ nextButton.addEventListener('click', () => {
         currentQuestion++;
         loadQuestion(currentQuestion);
         nextButton.classList.add('hide');
+		$(document.getElementById("overlay")).toggleClass('alt'); 
     } else {
         restartQuiz();
     }
